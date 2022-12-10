@@ -10,7 +10,7 @@ class VisionTransformer(nn.Module):
     def __init__(
         self,
         image_size=32,
-        patch_size=4,
+        patch_size=2,
         in_channels=1,
         embedding_dim=192,
         num_layers=20,
