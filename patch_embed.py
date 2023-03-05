@@ -128,19 +128,7 @@ class EmbeddingStem(nn.Module):
                 self.projection = nn.Sequential(
                     nn.Conv2d(
                         channels, mid_ch,
-                        kernel_size=16, stride=2, padding=3, bias=False,
-                    ),
-                    nn.BatchNorm2d(mid_ch),
-                    nn.ReLU(inplace=True),
-                    nn.Conv2d(
-                        mid_ch, mid_ch,
-                        kernel_size=6, stride=1, padding=1, bias=False,
-                    ),
-                    nn.BatchNorm2d(mid_ch),
-                    nn.ReLU(inplace=True),
-                    nn.Conv2d(
-                        mid_ch, mid_ch,
-                        kernel_size=4, stride=1, padding=1, bias=False,
+                        kernel_size=2, stride=2, padding=0, bias=False,
                     ),
                     nn.BatchNorm2d(mid_ch),
                     nn.ReLU(inplace=True),
