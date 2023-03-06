@@ -14,7 +14,7 @@ class VisionTransformer(nn.Module):
         patch_size=2,
         in_channels=1,
         embedding_dim=96,
-        num_layers=8,
+        num_layers=18,
         num_heads=12,
         qkv_bias=False,
         mlp_ratio=2.0,
